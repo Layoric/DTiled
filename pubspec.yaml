@@ -1,5 +1,5 @@
 name: dtiled
-version: 0.0.4
+version: 0.0.7
 author: Darren Reid <layoric@gmail.com>
 description: A library to help render Tiled map editor maps.
 homepage: https://github.com/Layoric/DTiled
