@@ -44,4 +44,4 @@ Once the JSON map is loaded, other parts need to be initialised.
 
 [See complete simple example.](https://github.com/Layoric/DTiled/wiki/Simple-DTiled-example)
 
-
+![example](http://3.bp.blogspot.com/-r5wizd17O6o/UqQhv1opKKI/AAAAAAAABjE/pY04lWEXMhc/s1600/dtiled_example.png)
