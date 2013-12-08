@@ -1,4 +1,4 @@
-name: DTiled
+name: dtiled
 author: Darren Reid
 description: A library to help render Tiled map editor maps.
 dependencies:
