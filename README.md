@@ -3,7 +3,7 @@ DTiled
 
 A Dart package that renders Tiled maps and integrates with TiledStack services
 
-0.0.1 only supports the JSON map format and currently only renders Isometric maps. TMX and Orthogonal support coming.
+0.0.x only supports the JSON map format and currently only renders Isometric maps. TMX and Orthogonal support coming.
 
 Basics.
 
