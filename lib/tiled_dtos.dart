@@ -23,7 +23,12 @@ class MapDto {
 
   MapDto(Map tiledStackResponse) {
     var mapTemp = tiledStackResponse["Map"];
-    this.MapName = tiledStackResponse["MapName"];
+    if(mapTemp == null) {
+      //assume it is a straight JSON Tiled map
+      mapTemp = tiledStackResponse;
+    } else {
+      this.MapName = tiledStackResponse["MapName"];
+    }
     this.height = mapTemp["height"] as int;
     this.orientation = mapTemp["orientation"];
     this.properties = mapTemp["properties"];
