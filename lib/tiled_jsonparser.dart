@@ -111,7 +111,7 @@ class DTiledLoader {
                 tileData.MapPosition = new Point(x, y);
                 tileData.WorldPosition = IsometricHelper.MapToWorld(tiledMap,tileData.MapPosition);
                 Vector pos = IsometricHelper.MapOrthToWorldIso(tileData.MapPosition,tiledMap.TileWidth,tiledMap.TileHeight);
-                Rect bounds = new Rect(pos.x.floor(),pos.y.floor(),0,0);
+                Rect bounds = new Rect(pos.x,pos.y,0,0);
                 tileData.Bounds = bounds;
                 tiles[x][y] = tileData;
               }
@@ -153,8 +153,8 @@ class DTiledLoader {
     result.Type = mapObjectDto.type;
     result.Guid = mapObjectDto.guid;
     result.Rotation = mapObjectDto.rotation;
-    result.Bounds = new Rect(mapObjectPos.x.floor(),
-                             mapObjectPos.y.floor(),
+    result.Bounds = new Rect(mapObjectPos.x,
+                             mapObjectPos.y,
                              mapObjectDto.width,
                              mapObjectDto.height);
     result.Properties = mapObjectDto.properties;

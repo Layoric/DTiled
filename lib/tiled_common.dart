@@ -15,10 +15,10 @@ class Vector {
 }
 
 class Rect {
-  int x;
-  int y;
-  int width;
-  int height;
+  num x;
+  num y;
+  num width;
+  num height;
 
   Rect(this.x,this.y,this.width,this.height);
 }

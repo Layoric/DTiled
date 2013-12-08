@@ -19,7 +19,7 @@ Camera(TiledMap map, Rect viewPort) {
     num clampY = -500;//-1 * ((map.TileHeight) * map.Height) / 2;
     num clampWidth = (map.Width*map.TileWidth/2) * 3;
     num clampHeight = (map.Height*map.TileHeight/2) * 3;
-    Rect clampRect = new Rect(clampX,clampY,clampWidth,clampHeight);
+    Rect clampRect = new Rect(clampX.floor(),clampY.floor(),clampWidth.floor(),clampHeight.floor());
     Width = viewPort.width;
     Height = viewPort.height;
     Rotation = 0.0;
