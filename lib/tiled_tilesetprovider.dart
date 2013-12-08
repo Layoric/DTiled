@@ -1,15 +1,23 @@
 part of dtiled;
 
-class TilesetProvider extends TilesetProviderBase{
+class TiledStackTilesetProvider extends TilesetProviderBase{
 
   String BaseAddress;
-  TilesetProvider(this.BaseAddress);
+  TiledStackTilesetProvider(this.BaseAddress);
 
-  ImageElement GetTilesetTexture(String tilesetGuid) {
-    return new ImageElement(src: BaseAddress + "api/web/tiled/tilesetimage/id/" + tilesetGuid);
+  ImageElement GetTilesetTexture(TileSetDto tilesetDto) {
+    return new ImageElement(src: BaseAddress + "api/web/tiled/tilesetimage/id/" + tilesetDto.guid);
+  }
+}
+
+class LocalTilesetProvider extends TilesetProviderBase {
+  String BaseAddress;
+  LocalTilesetProvider(this.BaseAddress);
+  ImageElement GetTilesetTexture(TileSetDto tilesetDto) {
+    return new ImageElement(src:BaseAddress + "/" + tilesetDto.image);
   }
 }
 
 abstract class TilesetProviderBase {
-ImageElement GetTilesetTexture(String tilesetGuid);
+ImageElement GetTilesetTexture(TileSetDto tilesetDto);
 }

@@ -85,6 +85,7 @@ class TileSetDto {
     if(tempOffset != null) {
       this.tileoffset = new TileoffsetDto(tempOffset["x"] as int, tempOffset["y"] as int);
     }
+    
     this.guid = tileset["guid"];
   }
 }

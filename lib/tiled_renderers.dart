@@ -2,7 +2,7 @@ part of dtiled;
 class TiledIsometricRenderer  extends TiledBaseRenderer{
   CanvasElement canvas;
   CanvasRenderingContext2D context;
-  TilesetProvider tilesetProvider;
+  TilesetProviderBase tilesetProvider;
   Camera camera;
 
   TiledIsometricRenderer(this.canvas,this.context, this.tilesetProvider,this.camera);
@@ -119,7 +119,7 @@ class TiledIsometricRenderer  extends TiledBaseRenderer{
 class TiledOrthogonalRenderer {
   CanvasElement canvas;
   CanvasRenderingContext2D context;
-  TilesetProvider tilesetProvider;
+  TilesetProviderBase tilesetProvider;
   Camera camera;
 
   TiledOrthogonalRenderer(this.canvas,this.context, this.tilesetProvider,this.camera);

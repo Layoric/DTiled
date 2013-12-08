@@ -1,7 +1,6 @@
 library dtiled;
 import 'dart:math';
 import 'dart:html';
-import 'dart:web_gl';
 
 part 'tiled_common.dart';
 part 'tiled_dtos.dart';

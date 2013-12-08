@@ -4,7 +4,7 @@ class DTiledLoader {
 
   DTiledLoader(this.tilesetProvider);
 
-  TilesetProvider tilesetProvider;
+  TilesetProviderBase tilesetProvider;
 
   List<TiledTile> mapTiles;
 
@@ -184,7 +184,7 @@ class DTiledLoader {
         tileset.ImageHeight = tileSetDto.imageheight;
         tileset.ImageWidth = tileSetDto.imagewidth;
         tileset.Properties = tileSetDto.properties;
-        tileset.Texture = tilesetProvider.GetTilesetTexture(tileSetDto.guid);
+        tileset.Texture = tilesetProvider.GetTilesetTexture(tileSetDto);
         if(tileSetDto.tileoffset != null) {
           tileset.TileOffsetX = tileSetDto.tileoffset.x;
           tileset.TileOffsetY = tileSetDto.tileoffset.y;
