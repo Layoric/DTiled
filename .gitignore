@@ -2,3 +2,14 @@
 packages
 .project
 pubspec.lock
+.idea/.name
+.idea/DTiled.iml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/scopes/scope_settings.xml
+.idea/vcs.xml
+.idea/workspace.xml
+build/dtiled.css
+build/dtiled.dart.js
+build/dtiled.html

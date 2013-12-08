@@ -1,0 +1,8 @@
+name: DTiled
+author: Darren Reid
+description: A library to help render Tiled map editor maps.
+dependencies:
+  browser: any
+  game_loop: any
+  js: any
+  query_string: any
